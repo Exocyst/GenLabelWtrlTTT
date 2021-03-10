@@ -15,6 +15,11 @@ gDriveId = ''
 # browser link: http://drive.google.com/uc?export=view&id=<your GDrive File id>
 # Use custom CSS in OBS to make it transparent: body { background-color: rgba(0,0,0,0)!important } 
 
+#Iniate some values for the imager, so it doesn't get angry:
+raceNumber="$$"
+raceName="Race in Zwift"
+raceWorld="Zwift"
+
 # Grab the Race name & number from WTRL TTT-Event page
 url = "https://www.wtrl.racing/ttt/TTT-Event.php"
 req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -196,11 +201,6 @@ for event in courses:
 	if event[0]==raceName:
 		raceWorld=event[1]
 		print("Race World Found: "+raceWorld)
-
-#Iniate some values for the imager, so it doesn't get angry:
-raceNumber="$$"
-raceName="Race in Zwift"
-raceWorld="Zwift"
 
 #Initate the WTRL Gold Color
 color = (233, 179, 116)
