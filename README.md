@@ -14,6 +14,9 @@ Update the GenImage.py script file to set the gDriveId as this 'ID'.
 
 ## To use in OBs (or other):
 Add your ID to this link to get a browser source link you can use in OBS (or other):
+
 ```http://drive.google.com/uc?export=view&id=```
-Use custom CSS in OBS to make it transparent: 
+
+Use custom CSS in OBS to make it transparent:
+
 ```body { background-color: rgba(0,0,0,0)!important }```
